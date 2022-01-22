@@ -1,6 +1,28 @@
 # SMITH UTILITIES
 SMITH utilities for local-server interaction
 
+This set of commands are made to make SMITH access easier. All of these are coded in python so it is compatible with both linux, macos, and windows (via wsl).
+
+## Requirements
+1. SSHFS
+2. FUSERMOUNT
+3. PYTHON
+4. SSH
+5. Registered sshid 
+
+For macos' SSHFS and FUSERMOUNT go to https://sbgrid.org/corewiki/faq-sshfs.md and https://osxfuse.github.io/
+
+For Linux and WSL, use package manager to install these (i.e. `apt install`)
+
+Miniconda is a good python installer.  
+
+## Installation
+```
+$ git clone https://github.com/kimrojas/smith_utils
+$ echo 'export PATH=/home/user/smith_utils:$PATH' >> ~/.bashrc
+```
+
+
 ## List of Utility Commands
 1. smith_help
 2. smith_user_setup
