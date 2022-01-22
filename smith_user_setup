@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+# Author: Kurt Irvin Rojas
+# https://github.com/kimrojas/smith_utils
+"""
+SMITH SETUP
+    Initializes the user settings of smith.
+    This will ask for your ssh login details which 
+    will be used by other functionalities and save it as a cache
+"""
+import os
+import shutil
+import sys
+import configparser
+
+def CacheDirectory(prefix=os.environ["HOME"]):
+    """
+    Make the cache directory to contain the settings file.
+    Location = /home/username/.smith_utils or $HOME/.smith_utils
+    """
+    cache_path = os.path.join(prefix,".smith_utils")
+    os.makedirs(cache_path, exist_ok=True)
+    return cache_path
+
+default_profile = {
+    "smith_username"    :   None,
+    "smith_ip"          :   "133.1.116.161",
+    "smith_port"        :   '22',
+    "smith_server_mount":   os.path.join(os.environ['HOME'], "smith_server"),
+    "smith_global"      :   "False",
+    "smith_univ_port"   :   '10022',
+    "smith_mail"        :   "None",
+    "smith_server_home" :   "None"
+}
+
+def ask(profile, var, question, required=False):
+    while True:
+        ans = input(question)
+        if len(ans) != 0:
+            profile[var] = ans
+            break
+        else:
+            if not required: break
+            print("WARNING: This info is required, without any defaults.")
+
+def AskProfile():
+    profile = default_profile.copy()
+    ask(profile, "smith_username", "SMITH Username: ", required=True)
+    ask(profile, "smith_ip", f"SMITH IP Address (default={profile['smith_ip']}): ")
+    ask(profile, "smith_port", f"SMITH Port (default={profile['smith_port']}): ")
+    ask(profile, "smith_global", f"Do you have out-of-university access (default={profile['smith_global']})? ")
+    profile['smith_global'] = str(profile['smith_global'].upper() == "TRUE" )
+    if profile['smith_global'] == "True":
+        ask(profile, "smith_univ_port", f"SMITH University Port (default={profile['smith_univ_port']}):")
+        ask(profile, "smith_mail", "SMITH mail: ", required=True)
+    
+    # Mount point
+    profile["smith_server_mount"] = os.path.join(os.environ['HOME'], "smith_server")
+    # The drive/directory to mount
+    profile["smith_server_home"] = f"/home/{profile['smith_username']}"
+        
+    return profile
+    
+def ExportSettings(cache_path, profile):
+    cache_file = f"{cache_path}/settings.txt"
+    config = configparser.ConfigParser()
+    config['SETTINGS'] =  profile
+    with open(cache_file, 'w') as configfile:
+        config.write(configfile)
+    
+if __name__ == "__main__":
+    print ("Initializing user settings ...")
+    print ("- - -")
+    cache_path = CacheDirectory()
+    while True:
+        profile = AskProfile()
+        print("Configuration settings: ")
+        for i, j in profile.items(): print(i,"  =  ",j)
+        print (f"** (local) SSH COMMAND =  \n\tssh -Y {profile['smith_username']}@{profile['smith_ip']}")
+        if profile['smith_global'] == 'True': 
+            print(f"** (global) SSH TUNNEL COMMAND =  \n\tssh -o ServerAliveInterval=60 -L {profile['smith_univ_port']}:{profile['smith_ip']}:{profile['smith_port']} {profile['smith_mail']}")
+            print(f"** (global) SSH COMMAND =  \n\tssh -Y {profile['smith_username']}@localhost -p {profile['smith_univ_port']}")
+        print("---")
+        confirm = input("Continue (yes/no/restart)? ")
+        if confirm.lower() == "yes": 
+            break
+        elif confirm.lower() == "restart":
+            continue
+        else:
+            sys.exit("Exiting ...")
+    ExportSettings(cache_path, profile)
+    print("User settings complete!")
+    
+    
+

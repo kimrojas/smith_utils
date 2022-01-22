@@ -1,0 +1,92 @@
+#!/usr/bin/env python3
+# Author: Kurt Irvin Rojas
+# https://github.com/kimrojas/smith_utils
+"""
+SMITH SHARE
+    - Mounts the smith filesystem (only your home direcory) to your local machine
+    effectively making smith just a network drive. 
+    - With this you can now use local resources and environments
+        for example:
+            using visual studio code to open smith files (quick edits)
+            using python environment and jupyterlab
+            running processing codes without using smith login node
+            USING XCYSDEN WITHOUT LAG WHEN CONNECTION OUTSIDE THE UNIVERSITY (OMG!)
+    Usage: `smith_share [ mount | unmount ]` to mount/unmount
+"""
+import sys, os, subprocess
+sys.dont_write_bytecode = True
+from smith_user_parse import user
+import smith_check
+import smith_spinner as ss
+
+
+def init():
+    print(f"{'-'*53}")
+    print(f"{'MOUNTING SMITH SERVER TO LOCAL':^53}")
+    access = f"Access credentials: {user['smith_username']}"
+    print(f"{access:^53}")
+    print(f"{'-'*53}")
+
+def dir_avail():
+    avail = os.path.isdir(user['smith_server_mount'])
+    if avail:
+        print(f"Mount location available: ", user['smith_server_mount'])
+    else:
+        print(f"Mount location not available")
+        print(f"Creating mount location ... ", end = "")
+        os.makedirs(user['smith_server_mount'])
+        avail = os.path.isdir(user['smith_server_mount'])
+        if not avail: sys.exit("Mount location creation failed ! (IDK, but maybe you don't have permission to make a folder there)") 
+        print("Success")
+        print(f"Mount location available: ", user['smith_server_mount'])
+
+def errorcode():
+    helpme = "Usage: `smith_share [ mount | unmount ]` to mount/unmount"
+    if len(sys.argv) != 2: sys.exit(helpme)
+    if sys.argv[1] not in ['mount', 'unmount']: sys.exit(helpme)
+
+def connect():
+    init()
+    dir_avail()
+    if os.listdir(user['smith_server_mount']): sys.exit("SMITH SERVER LOCATION STILL MOUNTED /  NOT EMPTY.")
+    method = smith_check.check()
+    main_options = ['follow_symlinks','allow_other',
+                    'ConnectTimeout=3','ConnectionAttempts=1',
+                    'ServerAliveInterval=3', 'ServerAliveCountMax=1',
+                    'reconnect']
+    if method == 'UseLocal':
+        srvr = f"{user['smith_username']}@{user['smith_ip']}:{user['smith_server_home']}"
+        main_options.append(f"port={suc.smith_port}")
+        option = ','.join(main_options)
+    if method == 'UseGlobal':
+        srvr = f"{user['smith_username']}@localhost:{user['smith_server_home']}"
+        main_options.append(f"port={user['smith_univ_port']}")
+        option = ','.join(main_options)
+        
+    bashCommand = f"sshfs -C {srvr} {user['smith_server_mount']} -o {option}"
+    output = subprocess.run(bashCommand.split())
+
+    empty("connect", os.listdir(user['smith_server_mount']))
+
+def disconnect():
+    if 'linux' in sys.platform:
+        bashCommand = f"fusermount -zu {user['smith_server_mount']}"
+    if 'darwin' in sys.platform:
+        bashCommand = f"diskutil unmount force {user['smith_server_mount']}"
+    output = subprocess.run(bashCommand.split())
+    empty("disconnect", not os.listdir(user['smith_server_mount']))
+
+def empty(proc, condition):
+    if condition :
+        print(f"SMITH SERVER mount successfully {proc.upper()}ED.")
+    else:    
+        print(f"SMITH SERVER mount failed to {proc.upper()}.")
+
+
+
+## MAIN
+errorcode()
+if sys.argv[1] == 'mount':
+    connect()
+elif sys.argv[1] == 'unmount':
+    disconnect()

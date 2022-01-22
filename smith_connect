@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+# Author: Kurt Irvin Rojas
+# https://github.com/kimrojas/smith_utils
+"""
+SMITH CONNECT
+    A "smart" connection login utility for smith. 
+    This will automatically decide if you will connect 
+    using a local or global ssh protocol with local as priority.
+    No more manual ssh typing.
+"""
+import sys, os, subprocess
+sys.dont_write_bytecode = True
+from smith_user_parse import user
+import smith_check
+
+
+
+
+print(f"{'-'*53}")
+print(f"{'CONNECTING TO SMITH SERVER':^53}")
+access = f"Access credentials: {user['smith_username']}"
+print(f"{access:^53}")
+print(f"{'-'*53}")
+
+method = smith_check.check()
+
+if method == 'UseLocal': bashCommand = f"ssh -Y {user['smith_username']}@{user['smith_ip']}"
+if method == 'UseGlobal': bashCommand = f"ssh -Y {user['smith_username']}@localhost -p {user['smith_univ_port']}"
+
+output = subprocess.run(bashCommand.split())
+
+if output.returncode != 0:
+    print(f"{'-'*53}")
+    print(f"{'!! CONNECTION FAILURE !!':^53}")
+    print(f"{'-'*53}")
+    sys.exit()
+
+
+print(f"{'-'*53}")
+print(f"{'!! CONNECTION TERMINATED !!':^53}")
+print(f"{'-'*53}")

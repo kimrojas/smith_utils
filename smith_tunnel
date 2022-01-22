@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+# Author: Kurt Irvin Rojas
+# https://github.com/kimrojas/smith_utils
+from smith_user_parse import user
+import os
+print("""
+SMITH_TUNNEL
+    This command is used to tunnel or create a mediator connection to smith.
+    1. Run this command but leave this terminal window running. 
+    2. Use another terminal window for other stuff.
+    
+    To remove tunnel connection, click X or type 'exit'.
+""")
+os.system("ssh -o ServerAliveInterval=60 -L 10022:133.1.116.161:22 pstcp813@mail.eng.osaka-u.ac.jp")
+

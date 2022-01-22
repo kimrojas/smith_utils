@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+# Author: Kurt Irvin Rojas
+# https://github.com/kimrojas/smith_utils
+import sys, os, subprocess
+sys.dont_write_bytecode = True
+from smith_user_parse import user
+import smith_check
+
+
+
+print(f"{'-'*53}")
+print(f"{'RUNNING AVAILABILITY PROTOCOL':^53}")
+access = f"Access credentials: {user['smith_username']}"
+print(f"{access:^53}")
+print(f"{'-'*53}")
+
+method = smith_check.check()
+
+if method == 'UseLocal': bashCommand = f"ssh -Y {user['smith_username']}@{user['smith_ip']}"
+if method == 'UseGlobal': bashCommand = f"ssh -Y {user['smith_username']}@localhost -p {user['smith_univ_port']}"
+
+lookCommand = "qstat -f | grep ' 0/0'"
+fullCommand = bashCommand.split()
+fullCommand.append(lookCommand)
+
+output = subprocess.run(fullCommand)
+
+if output.returncode != 0:
+    print(f"{'-'*53}")
+    print(f"{'!! CONNECTION FAILURE !!':^53}")
+    print(f"{'-'*53}")
+    sys.exit()
+
+
+print(f"{'-'*53}")
+print(f"{'CONNECTION TERMINATED':^53}")
+print(f"{'-'*53}")
+
