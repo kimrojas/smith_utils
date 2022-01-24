@@ -22,6 +22,15 @@ $ git clone https://github.com/kimrojas/smith_utils
 $ echo 'export PATH=/home/user/smith_utils:$PATH' >> ~/.bashrc
 ```
 
+## Initialization
+The utility software will ask you for details. Simply use the command to initialize your login details:
+```
+$ smith_user_setup
+```
+
+The rough diagram of the ssh connection based on user input is:  
+<img src="img/sshcommandmap.PNG" alt="Diagram" width="800" height="500">
+<!-- ![Diagram](img/sshcommandmap.PNG | width=100) -->
 
 ## List of Utility Commands
 1. smith_help
