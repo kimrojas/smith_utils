@@ -9,10 +9,13 @@ import smith_check
 
 
 
-print(f"{'-'*53}")
-print(f"{'RUNNING STATUS PROTOCOL':^53}")
-access = f"Access credentials: {user['smith_username']}"
-print(f"{access:^53}")
+# print(f"{'-'*53}")
+# print(f"{'RUNNING STATUS PROTOCOL':^53}")
+# access = f"Access credentials: {user['smith_username']}"
+# print(f"{access:^53}")
+# print(f"{'-'*53}")
+
+print("USER JOB STATUS")
 print(f"{'-'*53}")
 
 method = smith_check.check()
@@ -32,6 +35,6 @@ if output.returncode != 0:
     print(f"{'-'*53}")
     sys.exit()
 
-print(f"{'-'*53}")
-print(f"{'!! CONNECTION TERMINATED !!':^53}")
-print(f"{'-'*53}")
+# print(f"{'-'*53}")
+# print(f"{'!! CONNECTION TERMINATED !!':^53}")
+# print(f"{'-'*53}")
