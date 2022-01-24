@@ -11,5 +11,7 @@ SMITH_TUNNEL
     
     To remove tunnel connection, click X or type 'exit'.
 """)
-os.system("ssh -o ServerAliveInterval=60 -L 10022:133.1.116.161:22 pstcp813@mail.eng.osaka-u.ac.jp")
+os.system(f"ssh -o ServerAliveInterval=15 -L {user['smith_univ_port']}:{user['smith_ip']}:{user['smith_port']} {user['smith_mail']}")
+
+# os.system("ssh -o ServerAliveInterval=60 -L 10022:133.1.116.161:22 pstcp813@mail.eng.osaka-u.ac.jp")
 
