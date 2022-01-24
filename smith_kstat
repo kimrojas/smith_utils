@@ -15,25 +15,32 @@ import smith_check
 # print(f"{access:^53}")
 # print(f"{'-'*53}")
 
-print("USER JOB STATUS")
-print(f"{'-'*53}")
+
 
 method = smith_check.check()
+
+print("USER JOB STATUS")
+print(f"{'-'*53}")
 
 if method == 'UseLocal': bashCommand = f"ssh -Y {user['smith_username']}@{user['smith_ip']}"
 if method == 'UseGlobal': bashCommand = f"ssh -Y {user['smith_username']}@localhost -p {user['smith_univ_port']}"
 
 lookCommand = f"qstat -u {user['smith_username']}"
-fullCommand = bashCommand.split()
-fullCommand.append(lookCommand)
+fullCommand = f"{bashCommand} '{lookCommand}'"
+process = subprocess.Popen(fullCommand, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+output, error = process.communicate()
+output = (output.decode('ascii')).splitlines()
+for line in output:
+    print(line)
 
-output = subprocess.run(fullCommand)
 
-if output.returncode != 0:
-    print(f"{'-'*53}")
-    print(f"{'!! CONNECTION FAILURE !!':^53}")
-    print(f"{'-'*53}")
-    sys.exit()
+# output = subprocess.run(fullCommand)
+
+# if output.returncode != 0:
+#     print(f"{'-'*53}")
+#     print(f"{'!! CONNECTION FAILURE !!':^53}")
+#     print(f"{'-'*53}")
+#     sys.exit()
 
 # print(f"{'-'*53}")
 # print(f"{'!! CONNECTION TERMINATED !!':^53}")
