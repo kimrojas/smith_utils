@@ -56,7 +56,7 @@ def connect():
                     'reconnect']
     if method == 'UseLocal':
         srvr = f"{user['smith_username']}@{user['smith_ip']}:{user['smith_server_home']}"
-        main_options.append(f"port={suc.smith_port}")
+        main_options.append(f"port={user['smith_port']}")
         option = ','.join(main_options)
     if method == 'UseGlobal':
         srvr = f"{user['smith_username']}@localhost:{user['smith_server_home']}"
