@@ -61,6 +61,12 @@ SMITH UTILITIES
             Sends a query command to smith check on available nodes.
         Usage:
             smith_avail
+            
+    `smith_qsub`
+        Description:
+            Sends a qsub command to smith with explicit login. Use in conjunction with smith_share.
+        Usage:
+            smith_qsub [qsub options]
 """
 
 print(short_help)

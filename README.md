@@ -98,3 +98,11 @@ The rough diagram of the ssh connection based on user input is:
         
     Usage:
         smith_avail
+
+### `smith_qsub`
+    Description:
+        Sends a qsub command to smith with explicit login. Use in conjunction with smith_share.
+        
+    Usage:
+        smith_qsub [qsub options]
+
