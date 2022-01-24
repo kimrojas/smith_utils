@@ -7,34 +7,40 @@ from smith_user_parse import user
 import smith_check
 
 
-
-# print(f"{'-'*53}")
-# print(f"{'RUNNING AVAILABILITY PROTOCOL':^53}")
-# access = f"Access credentials: {user['smith_username']}"
-# print(f"{access:^53}")
-# print(f"{'-'*53}")
-print("RESOURCE AVAILABILITY")
-print(f"{'-'*53}")
-
+# Check connection
 method = smith_check.check()
-
 if method == 'UseLocal': bashCommand = f"ssh -Y {user['smith_username']}@{user['smith_ip']}"
 if method == 'UseGlobal': bashCommand = f"ssh -Y {user['smith_username']}@localhost -p {user['smith_univ_port']}"
 
-lookCommand = "qstat -f | grep ' 0/0'"
-fullCommand = bashCommand.split()
-fullCommand.append(lookCommand)
+# Setup and run ssh query command
+lookCommand = "qstat -f"
+fullCommand = f"{bashCommand} '{lookCommand}'"
+process = subprocess.Popen(fullCommand, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+output, error = process.communicate()
+output = (output.decode('ascii')).splitlines()
 
-output = subprocess.run(fullCommand)
+# Trim output
+okay = []
+for line in output:
+    cond1 = '   0/0/' in line
+    cond2 = '-NA-' not in line
+    if cond1 and cond2: okay.append(line.split())
+okay
 
-if output.returncode != 0:
-    print(f"{'-'*53}")
-    print(f"{'!! CONNECTION FAILURE !!':^53}")
-    print(f"{'-'*53}")
-    sys.exit()
+# Show output
+outlines = []
+outlines.append("RESOURCE AVAILABILITY")
+outlines.append(f"{'-'*53}")
+if len(okay) == 0: 
+    outlines.append("No resources available at this moment, try again later.")
+else:
+    outlines.append(f"{'NODE':<15}{'CAPACITY':<12}{'LOAD':<8}")
+    for line in okay:
+        outlines.append(f"{line[0]:<15}{line[2]:<12}{line[3]:<8}")
+
+for line in outlines:
+    print(line)
+    
 
 
-# print(f"{'-'*53}")
-# print(f"{'CONNECTION TERMINATED':^53}")
-# print(f"{'-'*53}")
 

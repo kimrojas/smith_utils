@@ -9,7 +9,7 @@ from time import sleep
 from smith_user_parse import user 
 
 def check():
-    print("Establishing Connection  ... ", end="")
+    print("** Establishing Connection  ... ", end="")
     spinner = ss.Spinner()
     spinner.start()
     tlocal = Thread(target=check_local)
