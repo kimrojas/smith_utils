@@ -21,4 +21,10 @@ remotepath = [user['smith_server_home']] + lpath[4:]
 remotepath =  "/".join(remotepath)
 strArgs = " ".join(sys.argv[1:])
 FinalCommand = f"{bashCommand} 'cd {remotepath} && qsub {strArgs}' "
-subprocess.run(FinalCommand, shell=True)
+
+process = subprocess.Popen(FinalCommand, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+output, error = process.communicate()
+# subprocess.run(FinalCommand, shell=True)
+output = (output.decode('ascii')).splitlines()
+for line in output:
+    print(line)
