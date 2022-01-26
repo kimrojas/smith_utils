@@ -1,0 +1,4 @@
+alias connect='smith_connect'
+alias kstat='smith_kstat'
+alias avail='smith_avail'
+alias qsub='smith_qsub'

@@ -27,7 +27,7 @@ method = smith_check.check()
 if method == 'UseLocal': bashCommand = f"ssh -Y {user['smith_username']}@{user['smith_ip']}"
 if method == 'UseGlobal': bashCommand = f"ssh -Y {user['smith_username']}@localhost -p {user['smith_univ_port']}"
 
-output = subprocess.run(bashCommand.split())
+output = subprocess.run(bashCommand, shell=True)
 
 if output.returncode != 0:
     print(f"{'-'*53}")
