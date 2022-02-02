@@ -5,6 +5,7 @@ import sys, os, subprocess
 sys.dont_write_bytecode = True
 from smith_user_parse import user
 import smith_check
+from smith_output import blue, green, warning, fail, bold
 
 
 # Check connection
@@ -32,27 +33,13 @@ def see_capacity(cap):
     b = cap.split('/')
     return f"{b[0]}/{b[1]}/ {b[2]}"
 
-class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKCYAN = '\033[96m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
-    
-def colored( a):
-    return bcolors.OKGREEN + a + bcolors.ENDC
-
 outlines = []
-outlines.append(colored("RESOURCE AVAILABILITY"))
-outlines.append(colored(f"{'-'*53}"))
+outlines.append(green("RESOURCE AVAILABILITY"))
+outlines.append(green(f"{'-'*53}"))
 if len(okay) == 0: 
-    outlines.append(bcolors.WARNING+"No resources available at this moment, try again later."+bcolors.ENDC)
+    outlines.append(warning("No resources available at this moment, try again later."))
 else:
-    outlines.append(bcolors.BOLD+f"{'QUEUE':^10}{'NODE':^10}{'CAPACITY':^10}{'LOAD':^8}"+bcolors.ENDC)
+    outlines.append(bold(f"{'QUEUE':^10}{'NODE':^10}{'CAPACITY':^10}{'LOAD':^8}"))
     b4queue = ""
     init = 1
     for line in okay:
@@ -66,9 +53,11 @@ else:
             queue = ""
         capacity = line[2].split('/')[-1]
         load = line[3]
-        queue = bcolors.OKBLUE + queue + bcolors.ENDC
+        queue = blue(queue)
         outlines.append(f"{queue:^19}{node:^10}{capacity:^10}{load:^8}")
-outlines.append(colored(f"{'-'*53}"))
+        
+outlines.append(green(f"{'-'*53}"))
+
 for line in outlines:
     print(line)
     

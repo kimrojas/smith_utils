@@ -7,6 +7,8 @@ from threading import Thread
 import smith_spinner as ss
 from time import sleep
 from smith_user_parse import user 
+from smith_output import blue, green, warning, fail, bold, underline
+
 
 def check():
     print("** Establishing Connection  ... ", end="")
@@ -26,15 +28,15 @@ def check():
 
     if rcode_local == 0:
         res = "UseLocal"
-        print(res)
+        print(underline(res))
         return res
     elif rcode_global == 0:
         res = "UseGlobal"
-        print(res)
+        print(underline(res))
         return res
     else:
-        print("ConnectionError")
-        print("**If you are outside the university, run `smith_tunnel` in a separate terminal before running this code again")
+        print(fail("ConnectionError"))
+        print(fail("**If you are outside the university, run `smith_tunnel` in a separate terminal before running this code again"))
         sys.exit()
 
 

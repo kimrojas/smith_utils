@@ -18,14 +18,12 @@ sys.dont_write_bytecode = True
 from smith_user_parse import user
 import smith_check
 import smith_spinner as ss
+from smith_output import blue, green, warning, fail, bold, underline, cyan
 
 
 def init():
-    print(f"{'-'*53}")
-    print(f"{'MOUNTING SMITH SERVER TO LOCAL':^53}")
-    access = f"Access credentials: {user['smith_username']}"
-    print(f"{access:^53}")
-    print(f"{'-'*53}")
+    print(green(f"MOUNTING SMITH SERVER TO LOCAL ({user['smith_username']})"))
+    print(green(f"{'-'*53}"))
 
 def dir_avail():
     avail = os.path.isdir(user['smith_server_mount'])
@@ -36,7 +34,7 @@ def dir_avail():
         print(f"Creating mount location ... ", end = "")
         os.makedirs(user['smith_server_mount'])
         avail = os.path.isdir(user['smith_server_mount'])
-        if not avail: sys.exit("Mount location creation failed ! (IDK, but maybe you don't have permission to make a folder there)") 
+        if not avail: sys.exit(fail("Mount location creation failed ! (IDK, but maybe you don't have permission to make a folder there)")) 
         print("Success")
         print(f"Mount location available: ", user['smith_server_mount'])
 
@@ -48,7 +46,7 @@ def errorcode():
 def connect():
     init()
     dir_avail()
-    if os.listdir(user['smith_server_mount']): sys.exit("SMITH SERVER LOCATION STILL MOUNTED /  NOT EMPTY.")
+    if os.listdir(user['smith_server_mount']): sys.exit(fail("SMITH SERVER LOCATION STILL MOUNTED /  NOT EMPTY."))
     method = smith_check.check()
     main_options = ['follow_symlinks','allow_other',
                     'ConnectTimeout=3','ConnectionAttempts=1',
@@ -64,7 +62,7 @@ def connect():
         option = ','.join(main_options)
         
     bashCommand = f"sshfs -C {srvr} {user['smith_server_mount']} -o {option}"
-    output = subprocess.run(bashCommand.split())
+    output = subprocess.run(bashCommand.split()) 
 
     empty("connect", os.listdir(user['smith_server_mount']))
 
@@ -78,9 +76,9 @@ def disconnect():
 
 def empty(proc, condition):
     if condition :
-        print(f"SMITH SERVER mount successfully {proc.upper()}ED.")
+        print(bold(cyan(f"SMITH SERVER mount successfully {proc.upper()}ED.")))
     else:    
-        print(f"SMITH SERVER mount failed to {proc.upper()}.")
+        print(bold(fail(f"SMITH SERVER mount failed to {proc.upper()}.")))
 
 
 
@@ -88,5 +86,6 @@ def empty(proc, condition):
 errorcode()
 if sys.argv[1] == 'mount':
     connect()
+    print(green(f"{'-'*53}"))
 elif sys.argv[1] == 'unmount':
     disconnect()

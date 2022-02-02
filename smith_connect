@@ -12,15 +12,11 @@ import sys, os, subprocess
 sys.dont_write_bytecode = True
 from smith_user_parse import user
 import smith_check
+from smith_output import blue, green, warning, fail, bold, underline
 
 
-
-
-print(f"{'-'*53}")
-print(f"{'CONNECTING TO SMITH SERVER':^53}")
-access = f"Access credentials: {user['smith_username']}"
-print(f"{access:^53}")
-print(f"{'-'*53}")
+print(green(f"CONNECTING TO SMITH SERVER ({user['smith_username']})"))
+print(green(f"{'-'*53}"))
 
 method = smith_check.check()
 
@@ -30,12 +26,9 @@ if method == 'UseGlobal': bashCommand = f"ssh -Y {user['smith_username']}@localh
 output = subprocess.run(bashCommand, shell=True)
 
 if output.returncode != 0:
-    print(f"{'-'*53}")
-    print(f"{'!! CONNECTION FAILURE !!':^53}")
-    print(f"{'-'*53}")
+    print(fail(f"{'-'*53}"))
+    print(green("CONNECTION FAILURE"))
     sys.exit()
 
-
-print(f"{'-'*53}")
-print(f"{'!! CONNECTION TERMINATED !!':^53}")
-print(f"{'-'*53}")
+print(green(f"{'-'*53}"))
+print(green("CONNECTION TERMINATED"))

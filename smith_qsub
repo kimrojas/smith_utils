@@ -9,6 +9,7 @@ import sys, os, subprocess
 sys.dont_write_bytecode = True
 from smith_user_parse import user
 import smith_check
+from smith_output import cyan, bold
 
 method = smith_check.check()
 
@@ -27,4 +28,4 @@ output, error = process.communicate()
 # subprocess.run(FinalCommand, shell=True)
 output = (output.decode('ascii')).splitlines()
 for line in output:
-    print(line)
+    print(cyan(bold(line)))

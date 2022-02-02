@@ -1,20 +1,38 @@
 # SMITH UTILITIES
 SMITH utilities for local-server interaction
 
-This set of commands are made to make SMITH access easier. All of these are coded in python so it is compatible with both linux, macos, and windows (via wsl).
+This set of commands are made to make SMITH access easier. All of these are coded in python so it is compatible with both linux, macos, and windows (via wsl).  
+KNOWN ADVANTAGES:  
+1. You have an ssh shortcut 
+2. Remote working is smoother due to local rendering/processing as opposed to being rendered in smith
+3. Personal software (Visual studio code) and environment (python environment and compilers) is used. 
+4. SMITH file system can be mounted as a network drive.
+
+KNOWN DISADVANTAGES:
+1.
+
 
 ## Requirements
 1. SSHFS
-2. FUSERMOUNT
+2. FUSERMOUNT/MACFUSE
 3. PYTHON
 4. SSH
 5. Registered sshid 
+
+> For mac OS,  
+> SSHFS and MACFUSE can be downloaded and installed using the guide https://sbgrid.org/corewiki/faq-sshfs.md
+>
+> For Linux,
+> Just use the command `sudo apt install -y sshfs fuse`
+
 
 For macos' SSHFS and FUSERMOUNT go to https://sbgrid.org/corewiki/faq-sshfs.md and https://osxfuse.github.io/
 
 For Linux and WSL, use package manager to install these (i.e. `apt install`)
 
 Miniconda is a good python installer.  
+
+
 
 ## Installation
 ```
