@@ -59,9 +59,9 @@ def AskProfile():
         ask(profile, "smith_server_mount", f"Smith Server Mount Location in Local Machine (default={profile['smith_server_mount']}):")
     
     # Mount point
-    profile["smith_server_mount"] = os.path.join(os.environ['HOME'], "smith_server")
-    # The drive/directory to mount
-    profile["smith_server_home"] = f"/home/{profile['smith_username']}"
+    # profile["smith_server_mount"] = os.path.join(os.environ['HOME'], "smith_server")
+    # # The drive/directory to mount
+    # profile["smith_server_home"] = f"/home/{profile['smith_username']}"
         
     return profile
     
