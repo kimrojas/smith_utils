@@ -30,7 +30,7 @@ def dir_avail():
     if avail:
         print(f"Mount location available: ", user['smith_server_mount'])
     else:
-        print(f"Mount location not available")
+        print(warning(f"Mount location not available"))
         print(f"Creating mount location ... ", end = "")
         os.makedirs(user['smith_server_mount'])
         avail = os.path.isdir(user['smith_server_mount'])
@@ -47,6 +47,8 @@ def connect():
     init()
     dir_avail()
     if os.listdir(user['smith_server_mount']): sys.exit(fail("SMITH SERVER LOCATION STILL MOUNTED /  NOT EMPTY."))
+    
+    print(f"Connecting to: {user['smith_server_home']}")
     method = smith_check.check()
     main_options = ['follow_symlinks','allow_other',
                     'ConnectTimeout=3','ConnectionAttempts=1',
@@ -60,7 +62,8 @@ def connect():
         srvr = f"{user['smith_username']}@localhost:{user['smith_server_home']}"
         main_options.append(f"port={user['smith_univ_port']}")
         option = ','.join(main_options)
-        
+    
+    
     bashCommand = f"sshfs -C {srvr} {user['smith_server_mount']} -o {option}"
     output = subprocess.run(bashCommand.split()) 
 
