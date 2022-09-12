@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+# Author: Kurt Irvin Rojas
+# https://github.com/kimrojas/smith_utils
+"""
+SMITH_QDEL
+    This utility allows you to delete jobs from local machine based on smith_share location
+"""
+import sys, os, subprocess
+sys.dont_write_bytecode = True
+from smith_user_parse import user
+import smith_check
+from smith_output import cyan, bold
+
+method = smith_check.check()
+
+if method == 'UseLocal': bashCommand = f"ssh -Y {user['smith_username']}@{user['smith_ip']}"
+if method == 'UseGlobal': bashCommand = f"ssh -Y {user['smith_username']}@localhost -p {user['smith_univ_port']}"
+
+#localpath = os.getcwd()
+#lpath = localpath.split('/')
+#remotepath = [user['smith_server_home']] + lpath[4:]
+#remotepath =  "/".join(remotepath)
+strArgs = " ".join(sys.argv[1:])
+FinalCommand = f"{bashCommand} 'qdel {strArgs}' "
+
+process = subprocess.Popen(FinalCommand, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+output, error = process.communicate()
+# subprocess.run(FinalCommand, shell=True)
+output = (output.decode('ascii')).splitlines()
+for line in output:
+    print(cyan(bold(line)))

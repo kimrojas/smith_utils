@@ -20,7 +20,7 @@ def check():
     tglobal.start()
 
     while tlocal.is_alive() or tglobal.is_alive():
-        sleep(0.1)
+        sleep(0.01)
 
     tlocal.join()
     tglobal.join()
@@ -46,7 +46,7 @@ def check_local(n=1):
     stdout, stderr = process_local.communicate()
     global rcode_local
     rcode_local = process_local.returncode
-    sleep(0.5)
+    #sleep(0.1)
 
 def check_global(n=1):
     bashCommand =f"ssh -o ConnectTimeout={n} {user['smith_username']}@localhost -p {user['smith_univ_port']} 'exit'"
@@ -54,7 +54,7 @@ def check_global(n=1):
     stdout, stderr = process_global.communicate()
     global rcode_global
     rcode_global = process_global.returncode
-    sleep(0.5)
+    #sleep(0.1)
 
 
 
