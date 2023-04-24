@@ -1,0 +1,1189 @@
+queuename                      qtype resv/used/tot. load_avg arch          states
+---------------------------------------------------------------------------------
+x17.q@x1701                    BIP   0/32/32        19.58    linux-x64     
+ 368707 0.51929 Mo3S10     msamuel      r     09/12/2022 11:34:36    32        
+       Full jobname:     Mo3S10
+       Master Queue:     x17.q@x1701
+       Requested PE:     x32 32
+       Granted PE:       x32 32
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x17.q
+---------------------------------------------------------------------------------
+x17.q@x1702                    BIP   0/32/32        18.78    linux-x64     
+ 368706 0.51929 Mo3S10     msamuel      r     09/12/2022 11:34:09    32        
+       Full jobname:     Mo3S10
+       Master Queue:     x17.q@x1702
+       Requested PE:     x32 32
+       Granted PE:       x32 32
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x17.q
+---------------------------------------------------------------------------------
+x17.q@x1703                    BIP   0/32/32        18.12    linux-x64     
+ 368708 0.51929 Mo3S10     msamuel      r     09/12/2022 11:34:57    32        
+       Full jobname:     Mo3S10
+       Master Queue:     x17.q@x1703
+       Requested PE:     x32 32
+       Granted PE:       x32 32
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x17.q
+---------------------------------------------------------------------------------
+x17.q@x1704                    BIP   0/32/32        19.84    linux-x64     
+ 368709 0.51929 Mo3S10     msamuel      r     09/12/2022 11:35:15    32        
+       Full jobname:     Mo3S10
+       Master Queue:     x17.q@x1704
+       Requested PE:     x32 32
+       Granted PE:       x32 32
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x17.q
+---------------------------------------------------------------------------------
+x17.q@x1705                    BIP   0/32/32        18.88    linux-x64     
+ 368711 0.51929 Mo3S10     msamuel      r     09/12/2022 11:35:48    32        
+       Full jobname:     Mo3S10
+       Master Queue:     x17.q@x1705
+       Requested PE:     x32 32
+       Granted PE:       x32 32
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x17.q
+---------------------------------------------------------------------------------
+x17.q@x1706                    BIP   0/32/32        18.81    linux-x64     
+ 368712 0.51929 Mo3S10     msamuel      r     09/12/2022 11:36:36    32        
+       Full jobname:     Mo3S10
+       Master Queue:     x17.q@x1706
+       Requested PE:     x32 32
+       Granted PE:       x32 32
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x17.q
+---------------------------------------------------------------------------------
+x17.q@x1707                    BIP   0/32/32        20.00    linux-x64     
+ 368714 0.51929 Mo3S10     msamuel      r     09/12/2022 11:37:15    32        
+       Full jobname:     Mo3S10
+       Master Queue:     x17.q@x1707
+       Requested PE:     x32 32
+       Granted PE:       x32 32
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x17.q
+---------------------------------------------------------------------------------
+x17.q@x1708                    BIP   0/32/32        18.81    linux-x64     
+ 368713 0.51929 Mo3S10     msamuel      r     09/12/2022 11:36:54    32        
+       Full jobname:     Mo3S10
+       Master Queue:     x17.q@x1708
+       Requested PE:     x32 32
+       Granted PE:       x32 32
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x17.q
+---------------------------------------------------------------------------------
+x19.q@x1901                    BIP   0/40/40        1.00     linux-x64     
+ 368679 0.52643 irc-0wat   frizka       r     09/12/2022 10:25:54    40        
+       Full jobname:     irc-0wat
+       Master Queue:     x19.q@x1901
+       Requested PE:     x40 40
+       Granted PE:       x40 40
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x19.q
+---------------------------------------------------------------------------------
+x19.q@x1902                    BIP   0/40/40        40.09    linux-x64     
+ 368674 0.52643 str_2      msamuel      r     09/12/2022 10:01:42    40        
+       Full jobname:     str_2
+       Master Queue:     x19.q@x1902
+       Requested PE:     x40 40
+       Granted PE:       x40 40
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x19.q
+---------------------------------------------------------------------------------
+x19.q@x1903                    BIP   0/40/40        1.00     linux-x64     
+ 368696 0.52643 irc-3wats  frizka       r     09/12/2022 10:45:42    40        
+       Full jobname:     irc-3wats
+       Master Queue:     x19.q@x1903
+       Requested PE:     x40 40
+       Granted PE:       x40 40
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x19.q
+---------------------------------------------------------------------------------
+x19.q@x1904                    BIP   0/40/40        0.98     linux-x64     
+ 368680 0.52643 irc-0wats  frizka       r     09/12/2022 10:27:39    40        
+       Full jobname:     irc-0wats
+       Master Queue:     x19.q@x1904
+       Requested PE:     x40 40
+       Granted PE:       x40 40
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x19.q
+---------------------------------------------------------------------------------
+x19.q@x1905                    BIP   0/40/40        1.00     linux-x64     
+ 368681 0.52643 gs-1wats   frizka       r     09/12/2022 10:30:21    40        
+       Full jobname:     gs-1wats
+       Master Queue:     x19.q@x1905
+       Requested PE:     x40 40
+       Granted PE:       x40 40
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x19.q
+---------------------------------------------------------------------------------
+x19.q@x1906                    BIP   0/40/40        0.98     linux-x64     
+ 368685 0.52643 gs-2wats   frizka       r     09/12/2022 10:36:51    40        
+       Full jobname:     gs-2wats
+       Master Queue:     x19.q@x1906
+       Requested PE:     x40 40
+       Granted PE:       x40 40
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x19.q
+---------------------------------------------------------------------------------
+x20.q@x2001                    BIP   0/52/52        52.19    linux-x64     
+ 368440 0.58357 c100O      jienriquez   r     09/12/2022 10:22:51    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2001
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2002                    BIP   0/52/52        51.61    linux-x64     
+ 368439 0.58357 c100O      jienriquez   r     09/12/2022 10:04:06    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2002
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2003                    BIP   0/52/52        52.13    linux-x64     
+ 368442 0.58357 c100O      jienriquez   r     09/12/2022 10:38:21    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2003
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2004                    BIP   0/52/52        51.45    linux-x64     
+ 368439 0.58357 c100O      jienriquez   r     09/12/2022 10:04:06    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2004
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2005                    BIP   0/52/52        52.06    linux-x64     
+ 368440 0.58357 c100O      jienriquez   r     09/12/2022 10:22:51    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2005
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2006                    BIP   0/52/52        52.06    linux-x64     
+ 368428 0.58357 c100O      jienriquez   r     09/12/2022 00:43:40    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2006
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2007                    BIP   0/52/52        52.14    linux-x64     
+ 368702 0.53714 str_0      msamuel      r     09/12/2022 11:15:03    52        
+       Full jobname:     str_0
+       Master Queue:     x20.q@x2007
+       Requested PE:     x52 52
+       Granted PE:       x52 52
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2008                    BIP   0/52/52        52.03    linux-x64     
+ 368443 0.58357 c100O      jienriquez   r     09/12/2022 10:51:03    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2008
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2009                    BIP   0/52/52        52.05    linux-x64     
+ 368441 0.58357 c100O      jienriquez   r     09/12/2022 10:34:57    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2009
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2010                    BIP   0/52/52        52.28    linux-x64     
+ 368442 0.58357 c100O      jienriquez   r     09/12/2022 10:38:21    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2010
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2011                    BIP   0/52/52        52.17    linux-x64     
+ 368436 0.58357 c100O      jienriquez   r     09/12/2022 08:12:06    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2011
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2012                    BIP   0/52/52        52.90    linux-x64     
+ 368438 0.58357 c100O      jienriquez   r     09/12/2022 10:01:48    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2012
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2013                    BIP   0/52/52        52.03    linux-x64     
+ 368441 0.58357 c100O      jienriquez   r     09/12/2022 10:34:57    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2013
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2014                    BIP   0/52/52        52.04    linux-x64     
+ 368428 0.58357 c100O      jienriquez   r     09/12/2022 00:43:40    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2014
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2015                    BIP   0/52/52        0.01     linux-x64     
+ 309109 0.53714 rpbe_n6    alfauzan     dt    09/12/2022 14:53:21    52        
+       Full jobname:     rpbe_n6
+       Master Queue:     x20.q@x2015
+       Requested PE:     x52 52
+       Granted PE:       x52 52
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2016                    BIP   0/52/52        52.04    linux-x64     
+ 368437 0.58357 c100O      jienriquez   r     09/12/2022 08:16:39    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2016
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2017                    BIP   0/52/52        52.11    linux-x64     
+ 368436 0.58357 c100O      jienriquez   r     09/12/2022 08:12:06    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2017
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2018                    BIP   0/52/52        52.17    linux-x64     
+ 368437 0.58357 c100O      jienriquez   r     09/12/2022 08:16:39    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2018
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2019                    BIP   0/52/52        52.09    linux-x64     
+ 368443 0.58357 c100O      jienriquez   r     09/12/2022 10:51:03    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2019
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x20.q@x2020                    BIP   0/52/52        52.29    linux-x64     
+ 368438 0.58357 c100O      jienriquez   r     09/12/2022 10:01:48    52        
+       Full jobname:     c100O
+       Master Queue:     x20.q@x2020
+       Requested PE:     x52 104
+       Granted PE:       x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+---------------------------------------------------------------------------------
+x21.q@x2101                    BIP   0/64/64        35.72    linux-x64     
+ 368525 0.54786 Mo3S9      msamuel      r     09/12/2022 00:43:21    64        
+       Full jobname:     Mo3S9
+       Master Queue:     x21.q@x2101
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2102                    BIP   0/64/64        64.05    linux-x64     
+ 368672 0.54786 disp22_tzv dndung       r     09/12/2022 13:26:00    64        
+       Full jobname:     disp22_tzvp
+       Master Queue:     x21.q@x2102
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2103                    BIP   0/64/64        35.90    linux-x64     
+ 368530 0.54786 Mo3S9      msamuel      r     09/12/2022 00:43:21    64        
+       Full jobname:     Mo3S9
+       Master Queue:     x21.q@x2103
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2104                    BIP   0/64/64        36.45    linux-x64     
+ 368529 0.54786 Mo3S9      msamuel      r     09/12/2022 00:43:21    64        
+       Full jobname:     Mo3S9
+       Master Queue:     x21.q@x2104
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2105                    BIP   0/64/64        37.79    linux-x64     
+ 368531 0.54786 Mo3S9      msamuel      r     09/12/2022 00:43:21    64        
+       Full jobname:     Mo3S9
+       Master Queue:     x21.q@x2105
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2106                    BIP   0/64/64        64.07    linux-x64     
+ 368671 0.54786 disp2_sto  dndung       r     09/12/2022 13:18:54    64        
+       Full jobname:     disp2_sto
+       Master Queue:     x21.q@x2106
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2107                    BIP   0/64/64        64.08    linux-x64     
+ 368643 0.54786 c100Ontrai jienriquez   r     09/12/2022 06:48:33    64        
+       Full jobname:     c100Ontrain
+       Master Queue:     x21.q@x2107
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2108                    BIP   0/64/64        35.77    linux-x64     
+ 368521 0.54786 Mo3S9      msamuel      r     09/12/2022 00:43:21    64        
+       Full jobname:     Mo3S9
+       Master Queue:     x21.q@x2108
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2109                    BIP   0/64/64        34.82    linux-x64     
+ 368742 0.54786 h1opt      krojas       r     09/12/2022 14:54:45    64 3
+       Full jobname:     h1opt
+       Master Queue:     x21.q@x2109
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2110                    BIP   0/64/64        36.25    linux-x64     
+ 368526 0.54786 Mo3S9      msamuel      r     09/12/2022 00:43:21    64        
+       Full jobname:     Mo3S9
+       Master Queue:     x21.q@x2110
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2111                    BIP   0/64/64        64.10    linux-x64     
+ 368718 0.54786 tzvp113    dndung       r     09/12/2022 14:05:39    64        
+       Full jobname:     tzvp113
+       Master Queue:     x21.q@x2111
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2112                    BIP   0/64/64        64.06    linux-x64     
+ 368705 0.54786 HW_d2      dndung       r     09/12/2022 13:52:21    64        
+       Full jobname:     HW_d2
+       Master Queue:     x21.q@x2112
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2113                    BIP   0/64/64        64.07    linux-x64     
+ 368742 0.54786 h1opt      krojas       r     09/12/2022 14:14:12    64 1
+       Full jobname:     h1opt
+       Master Queue:     x21.q@x2113
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2114                    BIP   0/64/64        34.62    linux-x64     
+ 368516 0.54786 Mo3S9      msamuel      r     09/12/2022 00:43:21    64        
+       Full jobname:     Mo3S9
+       Master Queue:     x21.q@x2114
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2115                    BIP   0/64/64        64.07    linux-x64     
+ 368640 0.54786 c100Ontrai jienriquez   r     09/12/2022 06:26:12    64        
+       Full jobname:     c100Ontrain
+       Master Queue:     x21.q@x2115
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2116                    BIP   0/64/64        64.17    linux-x64     
+ 368535 0.54786 dim221     alfauzan     r     09/12/2022 00:43:21    64        
+       Full jobname:     dim221
+       Master Queue:     x21.q@x2116
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2117                    BIP   0/64/64        36.12    linux-x64     
+ 368522 0.54786 Mo3S9      msamuel      r     09/12/2022 00:43:21    64        
+       Full jobname:     Mo3S9
+       Master Queue:     x21.q@x2117
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2118                    BIP   0/64/64        64.04    linux-x64     
+ 368636 0.54786 trainc111O jienriquez   r     09/12/2022 06:11:06    64        
+       Full jobname:     trainc111O
+       Master Queue:     x21.q@x2118
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2119                    BIP   0/64/64        64.06    linux-x64     
+ 368641 0.54786 c100Ontrai jienriquez   r     09/12/2022 06:42:18    64        
+       Full jobname:     c100Ontrain
+       Master Queue:     x21.q@x2119
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2120                    BIP   0/64/64        64.06    linux-x64     
+ 368742 0.54786 h1opt      krojas       r     09/12/2022 14:21:18    64 2
+       Full jobname:     h1opt
+       Master Queue:     x21.q@x2120
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2121                    BIP   0/64/64        35.63    linux-x64     
+ 368517 0.54786 Mo3S9      msamuel      r     09/12/2022 00:43:21    64        
+       Full jobname:     Mo3S9
+       Master Queue:     x21.q@x2121
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+x21.q@x2122                    BIP   0/64/64        64.06    linux-x64     
+ 368634 0.54786 trainc111O jienriquez   r     09/12/2022 05:56:21    64        
+       Full jobname:     trainc111O
+       Master Queue:     x21.q@x2122
+       Requested PE:     x64 64
+       Granted PE:       x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+---------------------------------------------------------------------------------
+xb1.q@xb01                     BIP   0/0/32         4.97     linux-x64     
+---------------------------------------------------------------------------------
+xb1.q@xb02                     BIP   0/32/32        1.00     linux-x64     
+ 368698 0.51929 ts-5wats   frizka       r     09/12/2022 10:58:24    32        
+       Full jobname:     ts-5wats
+       Master Queue:     xb1.q@xb02
+       Requested PE:     x32 32
+       Granted PE:       x32 32
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xb1.q
+---------------------------------------------------------------------------------
+xb1.q@xb03                     BIP   0/32/32        32.16    linux-x64     
+ 368720 0.54786 HW113      dndung       r     09/12/2022 12:00:39    32        
+       Full jobname:     HW113
+       Master Queue:     xb1.q@xb03
+       Requested PE:     x32 64
+       Granted PE:       x32 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xb1.q
+---------------------------------------------------------------------------------
+xb1.q@xb04                     BIP   0/32/32        32.07    linux-x64     
+ 368721 0.54786 da113      dndung       r     09/12/2022 12:03:03    32        
+       Full jobname:     da113
+       Master Queue:     xb1.q@xb04
+       Requested PE:     x32 64
+       Granted PE:       x32 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xb1.q
+---------------------------------------------------------------------------------
+xb1.q@xb05                     BIP   0/32/32        32.06    linux-x64     
+ 368735 0.54786 sto113     dndung       r     09/12/2022 12:09:33    32        
+       Full jobname:     sto113
+       Master Queue:     xb1.q@xb05
+       Requested PE:     x32 64
+       Granted PE:       x32 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xb1.q
+---------------------------------------------------------------------------------
+xb1.q@xb06                     BIP   0/32/32        32.06    linux-x64     
+ 368638 0.54786 CO2        jienriquez   r     09/12/2022 06:16:57    32        
+       Full jobname:     CO2
+       Master Queue:     xb1.q@xb06
+       Requested PE:     x32 64
+       Granted PE:       x32 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xb1.q
+---------------------------------------------------------------------------------
+xb1.q@xb07                     BIP   0/32/32        32.07    linux-x64     
+ 368637 0.54786 CO2        jienriquez   r     09/12/2022 06:15:30    32        
+       Full jobname:     CO2
+       Master Queue:     xb1.q@xb07
+       Requested PE:     x32 64
+       Granted PE:       x32 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xb1.q
+---------------------------------------------------------------------------------
+xb1.q@xb08                     BIP   0/32/32        32.16    linux-x64     
+ 368638 0.54786 CO2        jienriquez   r     09/12/2022 06:16:57    32        
+       Full jobname:     CO2
+       Master Queue:     xb1.q@xb08
+       Requested PE:     x32 64
+       Granted PE:       x32 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xb1.q
+---------------------------------------------------------------------------------
+xb1.q@xb09                     BIP   0/32/32        32.06    linux-x64     
+ 368720 0.54786 HW113      dndung       r     09/12/2022 12:00:39    32        
+       Full jobname:     HW113
+       Master Queue:     xb1.q@xb09
+       Requested PE:     x32 64
+       Granted PE:       x32 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xb1.q
+---------------------------------------------------------------------------------
+xb1.q@xb10                     BIP   0/32/32        32.12    linux-x64     
+ 368637 0.54786 CO2        jienriquez   r     09/12/2022 06:15:30    32        
+       Full jobname:     CO2
+       Master Queue:     xb1.q@xb10
+       Requested PE:     x32 64
+       Granted PE:       x32 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xb1.q
+---------------------------------------------------------------------------------
+xb1.q@xb11                     BIP   0/32/32        32.26    linux-x64     
+ 368721 0.54786 da113      dndung       r     09/12/2022 12:03:03    32        
+       Full jobname:     da113
+       Master Queue:     xb1.q@xb11
+       Requested PE:     x32 64
+       Granted PE:       x32 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xb1.q
+---------------------------------------------------------------------------------
+xb1.q@xb12                     BIP   0/32/32        32.06    linux-x64     
+ 368741 0.51929 str_0      msamuel      r     09/12/2022 14:10:03    32        
+       Full jobname:     str_0
+       Master Queue:     xb1.q@xb12
+       Requested PE:     x32 32
+       Granted PE:       x32 32
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xb1.q
+---------------------------------------------------------------------------------
+xb1.q@xb13                     BIP   0/32/32        1.62     linux-x64     
+ 368697 0.51929 irc-4wats  frizka       r     09/12/2022 10:53:24    32        
+       Full jobname:     irc-4wats
+       Master Queue:     xb1.q@xb13
+       Requested PE:     x32 32
+       Granted PE:       x32 32
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xb1.q
+---------------------------------------------------------------------------------
+xb1.q@xb14                     BIP   0/32/32        32.06    linux-x64     
+ 368735 0.54786 sto113     dndung       r     09/12/2022 12:09:33    32        
+       Full jobname:     sto113
+       Master Queue:     xb1.q@xb14
+       Requested PE:     x32 64
+       Granted PE:       x32 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xb1.q
+---------------------------------------------------------------------------------
+xe1.q@xe00                     BIP   0/0/8          0.01     linux-x64     
+---------------------------------------------------------------------------------
+xe1.q@xe01                     BIP   0/0/8          0.01     linux-x64     
+---------------------------------------------------------------------------------
+xe2.q@xe02                     BIP   0/0/12         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xe2.q@xe03                     BIP   0/0/12         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xe2.q@xe04                     BIP   0/0/12         0.01     linux-x64     
+---------------------------------------------------------------------------------
+xe2.q@xe05                     BIP   0/0/12         0.01     linux-x64     
+---------------------------------------------------------------------------------
+xe2.q@xe06                     BIP   0/0/12         0.01     linux-x64     
+---------------------------------------------------------------------------------
+xh1.q@xh01                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh02                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh03                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh04                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh05                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh06                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh07                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh08                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh09                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh10                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh11                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh12                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh13                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh14                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh15                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh16                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh17                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh18                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh19                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh20                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh21                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh22                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh23                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh24                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh25                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh26                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh27                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh28                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh29                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh30                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh31                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh32                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh33                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh34                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh35                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh1.q@xh36                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh2.q@xh37                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh2.q@xh38                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh2.q@xh39                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh2.q@xh40                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh2.q@xh41                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh2.q@xh42                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xh2.q@xh43                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+xi1.q@xi01                     BIP   0/16/16        15.49    linux-x64     
+ 368728 0.50500 RuphenCA-N susan        r     09/12/2022 12:06:51    16        
+       Full jobname:     RuphenCA-NO2-oxi_ACN42
+       Master Queue:     xi1.q@xi01
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xi1.q
+---------------------------------------------------------------------------------
+xi1.q@xi02                     BIP   0/16/16        15.87    linux-x64     
+ 368730 0.50500 RuphenCA-C susan        r     09/12/2022 12:07:33    16        
+       Full jobname:     RuphenCA-CH3-oxi_ACN42
+       Master Queue:     xi1.q@xi02
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xi1.q
+---------------------------------------------------------------------------------
+xi1.q@xi03                     BIP   0/16/16        15.85    linux-x64     
+ 368733 0.50500 Rupno2_dep susan        r     09/12/2022 12:08:33    16        
+       Full jobname:     Rupno2_deproN1-1
+       Master Queue:     xi1.q@xi03
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xi1.q
+---------------------------------------------------------------------------------
+xi1.q@xi04                     BIP   0/16/16        14.83    linux-x64     
+ 368736 0.50500 Rupno2_neu susan        r     09/12/2022 12:11:21    16        
+       Full jobname:     Rupno2_neu-1
+       Master Queue:     xi1.q@xi04
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xi1.q
+---------------------------------------------------------------------------------
+xi1.q@xi05                     BIP   0/16/16        15.51    linux-x64     
+ 368723 0.50500 RuphenCA-C susan        r     09/12/2022 12:04:06    16        
+       Full jobname:     RuphenCA-Cl-red_ACN42
+       Master Queue:     xi1.q@xi05
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xi1.q
+---------------------------------------------------------------------------------
+xi1.q@xi06                     BIP   0/16/16        15.25    linux-x64     
+ 368734 0.50500 Rupno2_202 susan        r     09/12/2022 12:09:00    16        
+       Full jobname:     Rupno2_2021_deproN1_1
+       Master Queue:     xi1.q@xi06
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xi1.q
+---------------------------------------------------------------------------------
+xi1.q@xi07                     BIP   0/16/16        15.79    linux-x64     
+ 368727 0.50500 RuphenCA-C susan        r     09/12/2022 12:06:33    16        
+       Full jobname:     RuphenCA-CH3-red_ACN42
+       Master Queue:     xi1.q@xi07
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xi1.q
+---------------------------------------------------------------------------------
+xi1.q@xi08                     BIP   0/16/16        16.04    linux-x64     
+ 368722 0.50500 RuphenCA-r susan        r     09/12/2022 12:03:39    16        
+       Full jobname:     RuphenCA-red_ACN32
+       Master Queue:     xi1.q@xi08
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xi1.q
+---------------------------------------------------------------------------------
+xi1.q@xi09                     BIP   0/16/16        15.99    linux-x64     
+ 368725 0.50500 RuphenCA-N susan        r     09/12/2022 12:05:30    16        
+       Full jobname:     RuphenCA-NO2-red_ACN42
+       Master Queue:     xi1.q@xi09
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xi1.q
+---------------------------------------------------------------------------------
+xi1.q@xi10                     BIP   0/16/16        15.51    linux-x64     
+ 368724 0.50500 RuphenCA-O susan        r     09/12/2022 12:05:15    16        
+       Full jobname:     RuphenCA-OCH3-red_ACN42
+       Master Queue:     xi1.q@xi10
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xi1.q
+---------------------------------------------------------------------------------
+xi1.q@xi11                     BIP   0/16/16        15.74    linux-x64     
+ 368732 0.50500 Rupoch3_de susan        r     09/12/2022 12:08:18    16        
+       Full jobname:     Rupoch3_deproN2-6
+       Master Queue:     xi1.q@xi11
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xi1.q
+---------------------------------------------------------------------------------
+xi1.q@xi12                     BIP   0/16/16        15.55    linux-x64     
+ 368729 0.50500 RuphenCA-C susan        r     09/12/2022 12:07:12    16        
+       Full jobname:     RuphenCA-Cl-oxi_ACN42
+       Master Queue:     xi1.q@xi12
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xi1.q
+---------------------------------------------------------------------------------
+xi1.q@xi13                     BIP   0/16/16        15.71    linux-x64     
+ 368731 0.50500 RuphenCA-O susan        r     09/12/2022 12:07:57    16        
+       Full jobname:     RuphenCA-OCH3-oxi_ACN42
+       Master Queue:     xi1.q@xi13
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xi1.q
+---------------------------------------------------------------------------------
+xs2.q@xs01                     BIP   0/0/16         0.01     linux-x64     
+---------------------------------------------------------------------------------
+xs2.q@xs02                     BIP   0/0/16         0.01     linux-x64     
+---------------------------------------------------------------------------------
+xs2.q@xs03                     BIP   0/0/16         0.07     linux-x64     
+---------------------------------------------------------------------------------
+xs2.q@xs04                     BIP   0/0/16         0.01     linux-x64     
+---------------------------------------------------------------------------------
+xs2.q@xs05                     BIP   0/0/16         0.01     linux-x64     
+---------------------------------------------------------------------------------
+xs2.q@xs06                     BIP   0/0/16         0.01     linux-x64     
+---------------------------------------------------------------------------------
+xs2.q@xs07                     BIP   0/16/16        14.77    linux-x64     
+ 368744 0.50500 param_opt  msamuel      r     09/12/2022 14:41:45    16        
+       Full jobname:     param_opt
+       Master Queue:     xs2.q@xs07
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xs2.q
+---------------------------------------------------------------------------------
+xs2.q@xs08                     BIP   0/16/16        14.12    linux-x64     
+ 368746 0.50500 param_opt  msamuel      r     09/12/2022 14:43:48    16        
+       Full jobname:     param_opt
+       Master Queue:     xs2.q@xs08
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xs2.q
+---------------------------------------------------------------------------------
+xs2.q@xs09                     BIP   0/16/16        13.34    linux-x64     
+ 368748 0.50500 param_opt  msamuel      r     09/12/2022 14:45:24    16        
+       Full jobname:     param_opt
+       Master Queue:     xs2.q@xs09
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xs2.q
+---------------------------------------------------------------------------------
+xs2.q@xs10                     BIP   0/0/16         0.01     linux-x64     
+---------------------------------------------------------------------------------
+xs2.q@xs11                     BIP   0/0/16         0.01     linux-x64     
+---------------------------------------------------------------------------------
+xs2.q@xs12                     BIP   0/16/16        13.87    linux-x64     
+ 368747 0.50500 param_opt  msamuel      r     09/12/2022 14:44:39    16        
+       Full jobname:     param_opt
+       Master Queue:     xs2.q@xs12
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xs2.q
+---------------------------------------------------------------------------------
+xs2.q@xs13                     BIP   0/0/16         0.01     linux-x64     
+---------------------------------------------------------------------------------
+xs2.q@xs14                     BIP   0/0/16         0.05     linux-x64     
+---------------------------------------------------------------------------------
+xs2.q@xs15                     BIP   0/0/16         0.01     linux-x64     
+---------------------------------------------------------------------------------
+xs2.q@xs16                     BIP   0/0/16         0.01     linux-x64     
+---------------------------------------------------------------------------------
+xs2.q@xs17                     BIP   0/0/16         0.26     linux-x64     
+---------------------------------------------------------------------------------
+xs2.q@xs18                     BIP   0/16/16        14.49    linux-x64     
+ 368745 0.50500 param_opt  msamuel      r     09/12/2022 14:42:54    16        
+       Full jobname:     param_opt
+       Master Queue:     xs2.q@xs18
+       Requested PE:     x16 16
+       Granted PE:       x16 16
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: xs2.q
+---------------------------------------------------------------------------------
+yh1.q@yh01                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+yh1.q@yh02                     BIP   0/0/24         -NA-     linux-x64     au
+---------------------------------------------------------------------------------
+yh1.q@yh03                     BIP   0/0/24         -NA-     linux-x64     au
+
+############################################################################
+ - PENDING JOBS - PENDING JOBS - PENDING JOBS - PENDING JOBS - PENDING JOBS
+############################################################################
+ 368645 0.60500 c100O      jienriquez   qw    09/12/2022 07:04:48   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368646 0.60500 c100O      jienriquez   qw    09/12/2022 07:04:50   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368647 0.60500 c100O      jienriquez   qw    09/12/2022 07:04:51   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368648 0.60500 c100O      jienriquez   qw    09/12/2022 07:04:52   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368649 0.60500 c100O      jienriquez   qw    09/12/2022 07:04:53   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368650 0.60500 c100O      jienriquez   qw    09/12/2022 07:04:55   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368651 0.60500 c100O      jienriquez   qw    09/12/2022 07:04:56   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368652 0.60500 c100O      jienriquez   qw    09/12/2022 07:04:57   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368653 0.60500 c100O      jienriquez   qw    09/12/2022 07:04:58   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368654 0.60500 c100O      jienriquez   qw    09/12/2022 07:04:59   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368655 0.60500 c100O      jienriquez   qw    09/12/2022 07:11:41   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368656 0.60500 c100O      jienriquez   qw    09/12/2022 07:11:43   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368657 0.60500 c100O      jienriquez   qw    09/12/2022 07:11:44   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368658 0.60500 c100O      jienriquez   qw    09/12/2022 07:11:45   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368659 0.60500 c100O      jienriquez   qw    09/12/2022 07:11:46   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368660 0.60500 c100O      jienriquez   qw    09/12/2022 07:11:47   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368661 0.60500 c100O      jienriquez   qw    09/12/2022 07:11:49   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368662 0.60500 c100O      jienriquez   qw    09/12/2022 07:11:50   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368663 0.60500 c100O      jienriquez   qw    09/12/2022 07:11:51   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368664 0.60500 c100O      jienriquez   qw    09/12/2022 07:11:52   128        
+       Full jobname:     c100O
+       Requested PE:     x64 128
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368444 0.58357 c100O      jienriquez   qw    09/08/2022 23:25:21   104        
+       Full jobname:     c100O
+       Requested PE:     x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+ 368445 0.58357 c100O      jienriquez   qw    09/08/2022 23:25:21   104        
+       Full jobname:     c100O
+       Requested PE:     x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+ 368446 0.58357 c100O      jienriquez   qw    09/08/2022 23:25:21   104        
+       Full jobname:     c100O
+       Requested PE:     x52 104
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x20.q
+ 368742 0.54786 h1opt      krojas       qw    09/12/2022 14:14:10    64 4
+       Full jobname:     h1opt
+       Requested PE:     x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368743 0.54786 h2opt      krojas       qw    09/12/2022 14:17:28    64 1
+       Full jobname:     h2opt
+       Requested PE:     x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368743 0.54786 h2opt      krojas       qw    09/12/2022 14:17:28    64 2
+       Full jobname:     h2opt
+       Requested PE:     x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368743 0.54786 h2opt      krojas       qw    09/12/2022 14:17:28    64 3
+       Full jobname:     h2opt
+       Requested PE:     x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368743 0.54786 h2opt      krojas       qw    09/12/2022 14:17:28    64 4
+       Full jobname:     h2opt
+       Requested PE:     x64 64
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x21.q
+ 368715 0.51929 Mo3S10     msamuel      qw    09/12/2022 11:37:36    32        
+       Full jobname:     Mo3S10
+       Requested PE:     x32 32
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x17.q
+ 368716 0.51929 Mo3S10     msamuel      qw    09/12/2022 11:38:04    32        
+       Full jobname:     Mo3S10
+       Requested PE:     x32 32
+       Hard Resources:   
+       Soft Resources:   
+       Hard requested queues: x17.q
